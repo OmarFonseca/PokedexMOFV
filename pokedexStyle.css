@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: url("Img/fondoPokedex.png")
     }
@@ -6,14 +11,23 @@ section{
     height: 5px;
 }
 
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
 .pokedexHeader{
     background-color: rgba(43, 43, 43, 0.712);
-    padding: 30px;
+    padding: 0px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .pokemonLaunchXTitulo{
@@ -31,7 +45,7 @@ section{
     min-height: 50vh;
     position: absolute;
     left: 20%;
-    top: 40%;
+    top: 22%;
 }
 
 .pokeImagen{
@@ -50,6 +64,7 @@ section{
     width: 700px;
     height: 700px;
     background-size: 700px;
+    box-sizing: border-box;
 }
 
 .boton_personalizado{
@@ -98,7 +113,7 @@ section{
     border: 210x solid #000000;
     position: absolute;  
     left: 59%;
-    top: 50%;
+    top: 35%;
     transform: rotate(9deg);
 }
 
@@ -113,6 +128,14 @@ section{
     background-repeat: no-repeat; 
     position: absolute;  
     left: 50%;
-    top: 65%;
+    top: 50%;
     transform: rotate(9deg);
+}
+
+@media screen and (max-width: 800px){
+
+    .pokemonLaunchXTitulo{
+        width: 100%;
+    }
+
 }
