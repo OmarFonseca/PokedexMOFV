@@ -6,6 +6,10 @@ const appNode = document.getElementById('app');
 butonSearch.addEventListener("click", insertPokemon);
 butonSearch.addEventListener("click", deletePokemons);
 
+butonSearch.addEventListener('touchstart', insertPokemon);
+butonSearch.addEventListener("touchstart", deletePokemons);
+
+
 
 async function insertPokemon(){
     const res = await fetch(`${baseURL}${pokeName.value.toLocaleLowerCase()}`)
