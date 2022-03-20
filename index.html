@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="MobileOptimized" content="width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="shortcut icon" href="./Img/iconoPokeBola.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pokedexStyle.css">
+    <div class="pokedexHeader">
+        <img src="./Img/B85.gif" alt="Pokemon" id="pokemon1" width="100px" aling="rigth"><br><br><br>
+        <section class="pokemonLaunchXTitulo"></section>
+        <img src="./Img/pokebola.gif" alt="Pokemon" id="pokemon2" width="100px" aling="rigth"><br><br><br>
+    </div>
+</head>
+<body>
+<main>
+<!--Funcion para buscar pokemon-->
+    <div>
+        <br><br><br>
+            <table>
+                <tr>            
+                    <td>
+                        <div class="fondoBusqueda">
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="text" class="campoBusqueda" placeholder="Pokemon" id="pokeName" name="pokeName" size="20" style="text-align:left"> 
+                            &nbsp;&nbsp;&nbsp; 
+                        </div> 
+                        <button class="boton_personalizado" id="searchPokemon">Buscar....</button> 
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+    </div>
+
+<!--Muestra foto de pokemon-->
+    <div class="pokeItems">
+        <section class="pokedex">
+            <div class="pokeImagen">
+                <section id="pokeName">
+                    <marquee behaviour="alternate" loop="infinite" scrolldelay=1 scrollamount="20" align="middle">
+                    <img src="./Img/poke.gif" alt="Pokemon" id="pokeImg" width="250px"><br>
+                    </marquee>
+                </section>
+            </div>
+        </section>
+    </div>
+
+<!--Muestra habilidades de pokemon-->
+    <section  class="tStats"  style="text-align:center"><br>Estadisticas <br>de Pokemon</section>
+    <section  class="stats" id="app" style="text-align:center"></section>
+
+</main>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
