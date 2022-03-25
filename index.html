@@ -2,58 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="MobileOptimized" content="width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Pokedex LaunchX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Pokédex.css">
+    <link rel="stylesheet" href="./320px.css">
     <link rel="shortcut icon" href="./Img/iconoPokeBola.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./pokedexStyle.css">
-    <div class="pokedexHeader">
-        <img src="./Img/B85.gif" alt="Pokemon" id="pokemon1" width="100px" aling="rigth"><br><br><br>
-        <section class="pokemonLaunchXTitulo"></section>
-        <img src="./Img/pokebola.gif" alt="Pokemon" id="pokemon2" width="100px" aling="rigth"><br><br><br>
-    </div>
+    <title>MOFV</title>
 </head>
 <body>
-<div class="contendor">
-<!--Funcion para buscar pokemon-->
-    <div>
-        <br><br><br>
-            <table>
-                <tr>            
-                    <td>
-                        <div class="fondoBusqueda">
-                            &nbsp;&nbsp;&nbsp;
-                            <input type="text" class="campoBusqueda" placeholder="Pokemon" id="pokeName" name="pokeName" size="20" style="text-align:left"> 
-                            &nbsp;&nbsp;&nbsp; 
-                        </div> 
-                        <button class="boton_personalizado" id="searchPokemon">Buscar....</button> 
-                    </td>
-                </tr>
-            </table>
-            <br><br><br>
+<main class="main">
+    <h1 class="caja0">&nbsp;&nbsp;&nbsp;Pokédex&nbsp;&nbsp;&nbsp;</h1>
+    <br><br><br><br><br>
+    <div class="caja1">
+        <h2>&nbsp;&nbsp;&nbsp;Nombre o número de pokémon&nbsp;&nbsp;&nbsp;</h2>
+        <input type="text" class="campoBusqueda" id="pokeName">
+        <div class="botonBuscar">
+            <button><img src="./Img/buscador.png" alt="buscar" width="35px" height="42px" id="searchPokemon"></button>
+        </div>
     </div>
 
-<!--Muestra foto de pokemon-->
-    <div class="pokeItems">
-        <section class="pokedex">
-            <div class="pokeImagen">
-                <section id="pokeName">
-                    <marquee behaviour="alternate" loop="infinite" scrolldelay=1 scrollamount="20" align="middle">
-                    <img src="./Img/poke.gif" alt="Pokemon" id="pokeImg" width="250px"><br>
-                    </marquee>
-                </section>
-            </div>
+    <div class="caja2">
+        <h3>&nbsp;&nbsp;&nbsp;Busca un pokémon por su nombre o usando el número de registro en la Pokédex&nbsp;&nbsp;&nbsp;</h3>
+    </div>
+
+    <section class="cajaPokemon">
+        <section>
+            <img src="./Img/pokemonTitulo.png" alt="pokemon" width="100px">
+            <img src="" alt="" id="pokeImg" width="300px">
         </section>
+    </section>
+
+    <section  class="cajaEstadisticas" id="app">Estadisticas</section>
+
+    <section class="cajaPokemonShiny">
+        <section>
+            <img src="./Img/Shiny.png" alt="shiny" width="80px">
+            <img src="" alt="" id="pokeShiny" width="300px">
+    </section>
     </div>
-
-<!--Muestra habilidades de pokemon-->
-    <section  class="tStats"  style="text-align:center"><br>Estadisticas <br>de Pokemon</section>
-    <section  class="stats" id="app" style="text-align:center"></section>
-</div>
-
+</main>
 </body>
+
 <footer>
     <script src="./pokedex.js"></script>
 </footer>
