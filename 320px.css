@@ -1,0 +1,24 @@
+.main .caja0 {
+    display: flex;
+  }
+
+.main .caja1 {
+    display: flex;
+ }
+
+.main .caja2 {
+    display: flex;
+ }
+
+.main .cajaPokemon{
+    display: flex;
+}
+
+.main .cajaEstadisticas{
+    display: flex;
+}
+
+
+.main .cajaPokemonShiny{
+    display: flex;
+}
